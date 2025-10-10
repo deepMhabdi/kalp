@@ -29,10 +29,10 @@ const Navbar = () => {
           <a href="#destinations" className="hover:text-yellow-300">
             Home 
           </a>
-          <a href="#hotels" className="hover:text-yellow-300">
+          <a href="#services" className="hover:text-yellow-300">
             Services
           </a>
-          <a href="#flights" className="hover:text-yellow-300">
+          <a href="#about" className="hover:text-yellow-300">
             About Us
           </a>
           <button className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition">
@@ -59,14 +59,14 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="#about"
+            href="#services"
             className="hover:text-yellow-300"
             onClick={() => setIsOpen(false)}
           >
             Services
           </a>
           <a
-            href="#flights"
+            href="#about"
             className="hover:text-yellow-300"
             onClick={() => setIsOpen(false)}
           >

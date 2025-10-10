@@ -12,7 +12,7 @@ const Landing = () => {
         className="relative w-full min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-28"
         style={{
           backgroundImage:
-            "url('https://i.pinimg.com/1200x/15/8e/ce/158ece1750e2ce133b1361a387be5242.jpg')",
+            "url('https://i.pinimg.com/736x/36/db/17/36db17771734bed6aafc15d7855cfd15.jpg')",
         }}
       >
         {/* Dark overlay */}
