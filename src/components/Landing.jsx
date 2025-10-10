@@ -10,21 +10,22 @@ const Landing = () => {
       {/* Hero Section */}
       <div
         className="relative w-full min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-28"
-        style={{
-          backgroundImage:
-            "url('https://i.pinimg.com/736x/36/db/17/36db17771734bed6aafc15d7855cfd15.jpg')",
-        }}
       >
+        <img
+          src="../assets/Pierres.png"
+          alt="Hero Background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center gap-4 max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-[#f5f1e9] mb-2">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold tracking-tight text-[#f5f1e9] mb-2">
             KALP DIAMONDS BV
           </h1>
-          <p className="text-md sm:text-lg md:text-xl text-gray-300 mb-6">
-            Manufactures, Wholesalers and Retailers of Rough and Polished
+          <p className="text-md sm:text-lg md:text-md text-gray-300 mb-6">
+            Manufacturers, Wholesalers and Retailers of Rough and Polished
             Diamonds
           </p>
           <p className="text-gray-100 text-sm md:text-base border-2 w-fit px-4 py-1 rounded-xl border-gray-300">
