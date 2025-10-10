@@ -30,10 +30,10 @@ const Navbar = () => {
             Home 
           </a>
           <a href="#hotels" className="hover:text-yellow-300">
-            About Us
+            Services
           </a>
           <a href="#flights" className="hover:text-yellow-300">
-            Services
+            About Us
           </a>
           <button className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition">
             Contact Us
@@ -63,14 +63,14 @@ const Navbar = () => {
             className="hover:text-yellow-300"
             onClick={() => setIsOpen(false)}
           >
-            About Us
+            Services
           </a>
           <a
             href="#flights"
             className="hover:text-yellow-300"
             onClick={() => setIsOpen(false)}
           >
-            Services
+            About Us
           </a>
 
           <button className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition">
