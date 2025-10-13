@@ -12,7 +12,7 @@ const Landing = () => {
         className="relative w-full min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-28"
       >
         <img
-          src="../assets/bg4.png"
+          src="../assets/bg5.png"
           alt="Hero Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
