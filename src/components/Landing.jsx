@@ -12,7 +12,7 @@ const Landing = () => {
         className="relative w-full min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-28"
       >
         <img
-          src="../assets/Pierres.png"
+          src="../assets/bg4.png"
           alt="Hero Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -21,17 +21,17 @@ const Landing = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center gap-4 max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold tracking-tight text-[#f5f1e9] mb-2">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#0c4b94] mb-2">
             KALP DIAMONDS BV
           </h1>
-          <p className="text-md sm:text-lg md:text-md text-gray-300 mb-6">
+          <p className="text-md sm:text-lg md:text-lg text-gray-300 mb-6 tracking-tighter font-bold">
             Manufacturers, Wholesalers and Retailers of Rough and Polished
             Diamonds
           </p>
-          <p className="text-gray-100 text-sm md:text-base border-2 w-fit px-4 py-1 rounded-xl border-gray-300">
+          {/* <p className="text-gray-100 text-sm md:text-base border-2 w-fit px-4 py-1 rounded-xl border-gray-300">
             3rd Generation Diamantaires
-          </p>
-          <button className="mt-5 border border-[#f5f1e9] text-[#f5f1e9] px-6 py-3 uppercase tracking-widest hover:bg-[#1a568d] hover:text-white transition-all duration-300">
+          </p> */}
+          <button className="border border-[#f5f1e9] text-[#f5f1e9] px-6 py-3 uppercase tracking-widest hover:bg-[#1a568d] hover:text-white transition-all duration-300">
             Get in Touch
           </button>
         </div>
