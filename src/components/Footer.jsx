@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       {/* CTA Section */}
-      <section className="py-20 bg-[#155793] text-white mt-20">
+      <section id="footer" className="py-20 bg-[#155793] text-white mt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-3xl sm:text-4xl font-bold font-serif">
             Looking for the finest calibrated & certified diamonds?

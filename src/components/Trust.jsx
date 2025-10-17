@@ -3,7 +3,7 @@ import WhyUs from "./Feature";
 
 const Trust = () => {
   return (
-    <div className="max-w-7xl mx-auto pb-10 flex flex-col gap-10 px-5 mt-10">
+    <div id="trust" className="max-w-7xl mx-auto pb-10 flex flex-col gap-10 px-5 mt-10">
       <div className="flex flex-col gap-4 items-center">
         <div className="flex gap-2 items-center ">
           <div className="h-2 w-2 bg-blue-600 rounded-full"></div>
