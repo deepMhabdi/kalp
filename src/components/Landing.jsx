@@ -4,7 +4,7 @@ import { Badge, Shield } from "lucide-react";
 
 const Landing = () => {
   return (
-    <div id="home" className="relative bg-[#1560bd] text-black">
+    <div id="home" className="relative bg-[#000366] text-black">
       <Navbar />
 
       {/* Hero Section */}
