@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -28,9 +29,19 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#155793]/90 backdrop-blur-md shadow-md" : "bg-transparent"
         }`}
     >
-      <div className="flex justify-between items-center px-6 py-4 text-white font-medium">
+      <div className="flex justify-between items-center px-6 py-3 text-white font-medium">
         {/* Logo */}
-        <h1 className="text-2xl font-bold">Kalp Diamonds</h1>
+        <div>
+          <div className="flex items-center gap-3">
+          <img 
+          src="../assets/logo.png" 
+          alt="Logo" 
+          className="h-10 w-auto object-contain"
+          />
+          </div>
+          <h1 className="text-2xl font-bold">Kalp Diamonds</h1>
+        </div>
+        
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-20 items-center">

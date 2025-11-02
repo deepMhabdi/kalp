@@ -1,10 +1,31 @@
+import React, { useState, useEffect } from "react";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react"
 
 const Footer = () => {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // ✅ Smooth scroll function
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // close mobile menu
+    }
+  };
+
   return (
     <>
       {/* CTA Section */}
-      <section id="footer" className="py-20 bg-[#155793] text-white mt-20">
+      <section id="footer" className="py-20 bg-[#155793] text-white mt-20 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-3xl sm:text-4xl font-bold font-serif">
             Looking for the finest calibrated & certified diamonds?
@@ -13,18 +34,18 @@ const Footer = () => {
             Get in touch with our diamond experts for personalized consultation and premium quality stones.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
+            <button
+              onClick={() => scrollToSection("footer")}
               className="px-6 py-3 bg-white text-black rounded-full hover:bg-gray-200 transition flex items-center justify-center"
             >
               Contact Us <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-            <a
-              href="/services"
+            </button>
+            <button
+              onClick={() => scrollToSection("services")}
               className="px-6 py-3 border border-white rounded-full hover:bg-white hover:text-black transition flex items-center justify-center"
             >
               View Our Services
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -48,7 +69,7 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div>
+            {/* <div>
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm">
                 <li><a href="/about" className="opacity-80 hover:text-gray-200 transition-colors">About Us</a></li>
@@ -56,7 +77,7 @@ const Footer = () => {
                 <li><a href="/rough-diamonds" className="opacity-80 hover:text-gray-200 transition-colors">Rough Diamonds</a></li>
                 <li><a href="/polished-diamonds" className="opacity-80 hover:text-gray-200 transition-colors">Polished Diamonds</a></li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Services */}
             <div>

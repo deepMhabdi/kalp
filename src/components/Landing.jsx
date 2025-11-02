@@ -20,16 +20,16 @@ const Landing = () => {
         <div className="absolute inset-0 backdrop-blur-[2px] "></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center gap-4 max-w-3xl">
+        <div className="relative z-10 flex flex-col items-center gap-4 max-w-3xl -mt-16">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-[#f5f1e9] mb-2">
             KALP DIAMONDS BV
           </h1>
           <p className="text-md sm:text-lg md:text-lg text-[#ffffff] mb-6  font-semibold">
             Manufacturers, Wholesalers and Retailers of Rough and Polished Diamonds
           </p>
-          <button className="border border-[#f5f1e9] text-[#f5f1e9] px-6 py-3 uppercase tracking-widest hover:bg-[#1a568d] hover:text-white transition-all duration-300">
+          {/* <button className="border border-[#f5f1e9] text-[#f5f1e9] px-6 py-3 uppercase tracking-widest hover:bg-[#1a568d] hover:text-white transition-all duration-300">
             Get in Touch
-          </button>
+          </button> */}
         </div>
 
         {/* Bottom Badges */}
@@ -38,7 +38,7 @@ const Landing = () => {
             <Shield /> Certificates by GIA | IGI | HRD
           </span>
           <span className="flex items-center gap-2 text-sm font-semibold">
-            <Badge /> Member of Responsible Jewellery Council (RJC 0000 5612)
+            <Badge /> Uniform Assortments from 0.005 ct till 0.30 ct
           </span>
         </div>
       </div>
