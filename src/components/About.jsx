@@ -23,7 +23,7 @@ const About = () => {
         </div>
         <div>
           <img
-            src="https://www.shutterstock.com/image-photo/close-diamonds-different-cuts-sizes-600nw-2280704393.jpg"
+            src="../assets/smalldiamonds.png"
             alt=""
             className="lg:h-52 rounded-2xl h-auto"
           />
@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <div className="flex flex-col md:flex-row pb-5 gap-5 justify-center">
 
-        <div className="h-64 rounded-xl w-full bg-[#155793] p-5 flex flex-col gap-4 justify-center items-center">
+        <div className="h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center">
           <div className="p-4 flex justify-center items-center h-28 w-28">
             <img
               src="../assets/Belgium.png"
@@ -49,7 +49,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="h-64 rounded-xl w-full bg-[#155793] p-5 flex flex-col gap-4 justify-center items-center">
+        <div className="h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center">
           <div className="p-4 flex justify-center items-center h-28 w-28">
             <img
               src="../assets/India.png"
@@ -68,7 +68,7 @@ const About = () => {
         </div>
 
 
-        <div className="h-64 rounded-xl w-full bg-[#155793] p-5 flex flex-col gap-4 justify-center items-center">
+        <div className="h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center">
           <div className="p-4 flex justify-center items-center h-28 w-28">
             <img
               src="../assets/Dubai.png"
@@ -87,7 +87,7 @@ const About = () => {
         </div>
 
 
-        <div className="h-64 rounded-xl w-full bg-[#155793] p-5 flex flex-col gap-4 justify-center items-center">
+        <div className="h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center">
           <div className="p-4 flex justify-center items-center h-28 w-28">
             <img
               src="../assets/China.png"
