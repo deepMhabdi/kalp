@@ -10,27 +10,26 @@ const Landing = () => {
       {/* Hero Section */}
       <div className="relative w-full min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-28">
         {/* Background Image */}
-        {/* <img
-          src="../assets/bg11.png"
+        <img
+          src="../assets/bg_image.png"
           alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover "
-        /> */}
-
-        {/* Add this blur overlay */}
-        <div className="absolute inset-0 backdrop-blur-[2px] "></div>
+          className="absolute inset-0 w-full h-full object-cover object-center sm:object-[25%_center]"
+        />
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center gap-4 max-w-3xl -mt-16">
+        <div className="relative z-10 flex flex-col gap-4 max-w-3xl mb-20 mr-auto ml-10 text-left">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-[#f5f1e9] mb-2">
             KALP DIAMONDS BV
           </h1>
-          <p className="text-md sm:text-lg md:text-lg text-[#ffffff] mb-6  font-semibold">
+          <p className="text-md sm:text-lg md:text-lg text-[#ffffff] mb-6 font-semibold">
             Manufacturers, Wholesalers and Retailers of Rough and Polished Diamonds
           </p>
           {/* <button className="border border-[#f5f1e9] text-[#f5f1e9] px-6 py-3 uppercase tracking-widest hover:bg-[#1a568d] hover:text-white transition-all duration-300">
-            Get in Touch
-          </button> */}
+    Get in Touch
+  </button> */}
         </div>
+
+
 
         {/* Bottom Badges */}
         <div className="absolute bottom-6 w-full px-6 flex flex-col md:flex-row justify-center md:justify-between gap-4 items-center text-white z-10">
