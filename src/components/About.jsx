@@ -37,7 +37,7 @@ const About = () => {
 
       <div className="flex flex-col md:flex-row pb-5 gap-5 justify-center">
 
-        <div className="relative h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -71,7 +71,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -92,21 +92,22 @@ const About = () => {
 
           {/* Hidden overlay (Address) */}
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-lg font-semibold">Dubai Office</p>
+            <p className="text-lg font-semibold">India Office</p>
             <p className="text-sm text-center mt-2 px-4">
-              kalp jewels  fzco
-              27 i gold tower  cluster i jlt dubai uae
+              340, 341, 
+              Diamond Village, Jadakhadi,
+              Mahidharpura, Surat.
             </p>
             <br />
             <p className="text-sm text-center mt-2 px-4">
-              +971 44301999
-              Info.kalpjewels.ae@gmail.com
+              +91 261 226099
+              hitul@glacialdiamonds.com
             </p>
           </div>
         </div>
 
 
-        <div className="relative h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -141,7 +142,7 @@ const About = () => {
         </div>
 
 
-        <div className="relative h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -175,7 +176,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative h-64 rounded-xl w-full bg-[#305ddd] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img

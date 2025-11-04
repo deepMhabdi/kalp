@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <>
       {/* CTA Section */}
-      <section id="footer" className="py-20 bg-[#305ddd] text-white mt-20">
+      <section id="footer" className="py-20 bg-[#1560BD] text-white mt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-3xl sm:text-4xl font-bold font-serif">
             Looking for the finest calibrated & certified diamonds?
@@ -51,7 +51,7 @@ const Footer = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#305ddd] text-white">
+      <footer className="bg-[#1560BD] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {/* Company Info */}
