@@ -4,7 +4,7 @@ const features = [
   "Specialize in providing precise calibration from 0.80 mm till 4.10 mm",
   "Uniform assortments from IF till PK2 clarity, GIA standard",
   "Certified diamonds from 0.30 ct till 10.00 ct",
-  "All our stones are certified by GIA, IGI, HRD",
+  "Ethical sourcing and compliance with industry standards",
 ];
 
 const Features = () => {
