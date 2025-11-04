@@ -97,7 +97,7 @@ const About = () => {
           </div>
           <div className="flex flex-col gap-2 items-center">
             <p className="text-xl font-semibold tracking-tighter text-gray-200 items-center text-center">
-              HONG KONG, CHINA & TAIWAN
+              HONG KONG
             </p>
             <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
               Serving Far East Market
