@@ -95,17 +95,9 @@ const Footer = () => {
                 <span className="opacity-80">+32 475 973 948</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-gray-300 flex-shrink-0" />
-                <span className="opacity-80">+32 488 296 328</span>
-              </div>
-              <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-gray-300 flex-shrink-0" />
                 <span className="opacity-80">swapnil@kalpdiamonds.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-gray-300 flex-shrink-0" />
-                <span className="opacity-80">Jimit@kalpdiamonds.com</span>
-              </div>
+              </div>  
             </div>
           </div>
 

@@ -14,7 +14,7 @@ import {
 export default function WhyUs() {
   const features = [
   {
-    title: "RJC certified member",
+    title: "RJC Certified Member",
     desc: "Committed to responsible business practices and ethical sourcing",
     icon:<ShieldCheck className="w-16 h-16 text-gray-700" strokeWidth={1.25} />,
   },

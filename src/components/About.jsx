@@ -51,9 +51,9 @@ const About = () => {
             <p className="text-xl font-semibold tracking-tighter text-gray-200 text-center">
               BELGIUM
             </p>
-            <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
+            {/* <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
               Serving Far East Market
-            </p>
+            </p> */}
           </div>
 
           {/* Hidden overlay (Address) */}
@@ -84,9 +84,9 @@ const About = () => {
             <p className="text-xl font-semibold tracking-tighter text-gray-200 text-center">
               INDIA
             </p>
-            <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
+            {/* <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
               Serving Far East Market
-            </p>
+            </p> */}
           </div>
 
           {/* Hidden overlay (Address) */}
@@ -120,9 +120,9 @@ const About = () => {
             <p className="text-xl font-semibold tracking-tighter text-gray-200 text-center">
               DUBAI
             </p>
-            <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
+            {/* <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
               Serving Far East Market
-            </p>
+            </p> */}
           </div>
 
           {/* Hidden overlay (Address) */}
@@ -157,9 +157,9 @@ const About = () => {
             <p className="text-xl font-semibold tracking-tighter text-gray-200 text-center">
               HONG KONG
             </p>
-            <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
+            {/* <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
               Serving Far East Market
-            </p>
+            </p> */}
           </div>
 
           {/* Hidden overlay (Address) */}
@@ -191,9 +191,9 @@ const About = () => {
             <p className="text-xl font-semibold tracking-tighter text-gray-200 text-center">
               Taiwan
             </p>
-            <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
+            {/* <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
               Serving Far East Market
-            </p>
+            </p> */}
           </div>
 
           {/* Hidden overlay (Address) */}
