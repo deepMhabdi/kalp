@@ -10,14 +10,23 @@ const Landing = () => {
       {/* Hero Section */}
       <div className="relative w-full min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-28">
         {/* Background Image */}
+        {/* Desktop Image */}
         <img
           src="../assets/bg_image.png"
-          alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-left object-cover md:object-center sm:object-[25%_center]"
+          alt="Hero Background Desktop"
+          className="absolute inset-0 w-full h-full object-center object-cover hidden md:block"
         />
 
+        {/* Mobile Image */}
+        <img
+          src="../assets/kalpbg_mobile.png"
+          alt="Hero Background Mobile"
+          className="absolute inset-0 w-full h-full object-center object-cover block md:hidden"
+        />
+
+
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col gap-4 max-w-3xl mb-20 mr-auto ml-10 text-left">
+        <div className="relative z-10 flex flex-col gap-4 max-w-3xl mb-20 mr-auto ml-10 text-left -mt-24 md:mt-0">
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-[#f5f1e9] mb-2">
             KALP DIAMONDS BV
           </h1>
