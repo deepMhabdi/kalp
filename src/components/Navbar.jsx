@@ -7,6 +7,8 @@ const Navbar = () => {
   const [navH, setNavH] = useState(0);
   const navRef = useRef(null);
 
+  const navigate = useNavigate();
+
   // Track navbar height (handles responsive changes)
   useEffect(() => {
     const measure = () => {
@@ -51,9 +53,8 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#002366]/90 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#002366]/90 backdrop-blur-md shadow-md" : "bg-transparent"
+        }`}
     >
       <div className="flex justify-between items-center px-6 md:px-10 py-3 text-white font-medium">
         {/* Logo */}
@@ -75,7 +76,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => scrollToSection("footer")}
+            onClick={() => navigate("/contact")}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition"
           >
             Contact Us
@@ -98,11 +99,15 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => scrollToSection("footer")}
+            onClick={() => {
+              setIsOpen(false);
+              navigate("/contact");
+            }}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#305ddd] transition"
           >
             Contact Us
           </button>
+
         </div>
       )}
     </nav>
