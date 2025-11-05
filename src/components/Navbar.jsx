@@ -1,33 +1,59 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [navH, setNavH] = useState(0);
+  const navRef = useRef(null);
 
-  // Scroll effect for background blur when scrolling
+  // Track navbar height (handles responsive changes)
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+    const measure = () => {
+      if (navRef.current) setNavH(navRef.current.getBoundingClientRect().height);
     };
-    window.addEventListener("scroll", handleScroll);
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (navRef.current) ro.observe(navRef.current);
+    window.addEventListener("resize", measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, []);
+
+  // Blur + bg when scrolling
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ✅ Smooth scroll function
+  // Smooth scroll with offset for fixed navbar
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // close mobile menu
+    if (!section) return;
+
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const rect = section.getBoundingClientRect();
+    const targetTop = window.scrollY + rect.top - navH - 8; // small 8px breathing room
+
+    if (prefersReduced) {
+      window.scrollTo(0, targetTop);
+    } else {
+      window.scrollTo({ top: targetTop, behavior: "smooth" });
     }
+
+    setIsOpen(false);
   };
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#002366]/90 backdrop-blur-md shadow-md" : "bg-transparent"
-        }`}
+      ref={navRef}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-[#002366]/90 backdrop-blur-md shadow-md" : "bg-transparent"
+      }`}
     >
       <div className="flex justify-between items-center px-6 md:px-10 py-3 text-white font-medium">
         {/* Logo */}
@@ -44,30 +70,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 lg:space-x-20 items-center">
-          <button
-            onClick={() => scrollToSection("home")}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Home
-          </button>
-          <button
-            onClick={() => scrollToSection("services")}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => scrollToSection("trust")}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Why Us
-          </button>
-          <button
-            onClick={() => scrollToSection("about")}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            About Us
-          </button>
+          <button onClick={() => scrollToSection("home")} className="hover:text-yellow-300 transition-colors">Home</button>
+          <button onClick={() => scrollToSection("services")} className="hover:text-yellow-300 transition-colors">Services</button>
+          <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
+          <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
             onClick={() => scrollToSection("footer")}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition"
@@ -76,7 +82,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Hamburger Menu (Mobile) */}
+        {/* Hamburger */}
         <div className="md:hidden z-50">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -87,47 +93,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-[#305ddd]/95 backdrop-blur-md text-white flex flex-col items-center gap-4 py-6">
+          <button onClick={() => scrollToSection("home")} className="hover:text-yellow-300 transition-colors">Home</button>
+          <button onClick={() => scrollToSection("services")} className="hover:text-yellow-300 transition-colors">Services</button>
+          <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
+          <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => {
-              scrollToSection("home");
-              setIsOpen(false);
-            }}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Home
-          </button>
-          <button
-            onClick={() => {
-              scrollToSection("services");
-              setIsOpen(false);
-            }}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => {
-              scrollToSection("trust");
-              setIsOpen(false);
-            }}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Why Us
-          </button>
-          <button
-            onClick={() => {
-              scrollToSection("about");
-              setIsOpen(false);
-            }}
-            className="hover:text-yellow-300 transition-colors"
-          >
-            About Us
-          </button>
-          <button
-            onClick={() => {
-              scrollToSection("footer");
-              setIsOpen(false);
-            }}
+            onClick={() => scrollToSection("footer")}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#305ddd] transition"
           >
             Contact Us
