@@ -13,7 +13,7 @@ const Features = () => {
       <div className="flex justify-center items-center gap-3 flex-wrap m-auto">
         {features.map((feat, index) => (
           <div
-            className="bg-[#1560BD] text-white text-sm text-center rounded-xl p-3 font-semibold"
+            className="bg-[#002366] text-white text-sm text-center rounded-xl p-3 font-semibold"
             key={feat}
           >
             <h2>⚫ {feat}</h2>

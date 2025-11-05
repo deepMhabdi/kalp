@@ -37,7 +37,7 @@ const About = () => {
 
       <div className="flex flex-col md:flex-row pb-5 gap-5 justify-center">
 
-        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#002366] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -70,7 +70,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#002366] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -106,7 +106,7 @@ const About = () => {
         </div>
 
 
-        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#002366] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -143,7 +143,7 @@ const About = () => {
         </div>
 
 
-        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#002366] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
@@ -177,7 +177,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative h-64 rounded-xl w-full bg-[#1560BD] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+        <div className="relative h-64 rounded-xl w-full bg-[#002366] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
           {/* Normal content */}
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img

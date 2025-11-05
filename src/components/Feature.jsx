@@ -34,11 +34,11 @@ export default function WhyUs() {
   return (
     <section className=" px-4 md:px-20">
       <div className="max-w-7xl">
-       <div className="grid grid-cols-1 md:grid-cols-3 border-t-2 border-l-2 border-[#155793]">
+       <div className="grid grid-cols-1 md:grid-cols-3 border-t-2 border-l-2 border-[#002366]">
   {features.map((feature, index) => (
     <div
       key={index}
-      className="border-r-2 border-b-2 border-[#155793] p-6 md:p-8 flex flex-col items-center text-center"
+      className="border-r-2 border-b-2 border-[#002366] p-6 md:p-8 flex flex-col items-center text-center"
     >
       <div className="mb-4">{feature.icon}</div>
       <h4 className="text-lg md:text-2xl tracking-tighter font-semibold text-gray-900 mb-2">
