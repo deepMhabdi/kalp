@@ -58,10 +58,9 @@ const About = () => {
 
           {/* Hidden overlay (Address) */}
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-lg font-semibold">Dubai Office</p>
+            <p className="text-lg font-semibold">Belgium Office</p>
             <p className="text-sm text-center mt-2 px-4">
-              kalp jewels  fzco
-              27 i gold tower  cluster i jlt dubai uae
+              Room 117-118, Hoveniersstraat 30, Box 27, 2018 Antwerp, Belgium
             </p>
             <br />
             <p className="text-sm text-center mt-2 px-4">
@@ -94,7 +93,7 @@ const About = () => {
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-lg font-semibold">India Office</p>
             <p className="text-sm text-center mt-2 px-4">
-              340, 341, 
+              340, 341,
               Diamond Village, Jadakhadi,
               Mahidharpura, Surat.
             </p>
@@ -130,8 +129,10 @@ const About = () => {
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-lg font-semibold">Dubai Office</p>
             <p className="text-sm text-center mt-2 px-4">
-              kalp jewels  fzco
-              27 i gold tower  cluster i jlt dubai uae
+              Kalp Jewels FZCO
+              27 I, Gold Tower, Cluster I,
+              Jumeirah Lake Towers (JLT),
+              Dubai, United Arab Emirates
             </p>
             <br />
             <p className="text-sm text-center mt-2 px-4">
