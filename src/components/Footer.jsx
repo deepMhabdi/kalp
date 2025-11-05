@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
 
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
