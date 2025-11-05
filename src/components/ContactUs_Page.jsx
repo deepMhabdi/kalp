@@ -45,7 +45,7 @@ const ContactUs_Page = () => {
 
       {/* RIGHT SECTION FORM */}
       <div className="w-full lg:w-[45%] flex flex-col pb-20">
-        <div className="bg-black text-white p-6 sm:p-10 rounded-2xl shadow-xl">
+        <div className="bg-[#002366] text-white p-6 sm:p-10 rounded-2xl shadow-xl">
           <h2 className="text-2xl font-semibold mb-6">Contact</h2>
           
           <form className="space-y-6">

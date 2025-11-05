@@ -59,8 +59,8 @@ const Navbar = () => {
     <nav
       ref={navRef}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled || location.pathname === "/contact"
-          ? "bg-[#002366]/90 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+        ? "bg-[#002366]/90 backdrop-blur-md shadow-md"
+        : "bg-transparent"
         }`}
 
     >
@@ -79,7 +79,16 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 lg:space-x-20 items-center">
-          <button onClick={() => scrollToSection("home")} className="hover:text-yellow-300 transition-colors">Home</button>
+          <button
+            onClick={() => {
+              if (location.pathname === "/contact") navigate("/");
+              else scrollToSection("home");
+            }}
+            className="hover:text-yellow-300 transition-colors"
+          >
+            Home
+          </button>
+
           <button onClick={() => scrollToSection("services")} className="hover:text-yellow-300 transition-colors">Services</button>
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
@@ -102,7 +111,18 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-[#305ddd]/95 backdrop-blur-md text-white flex flex-col items-center gap-4 py-6">
-          <button onClick={() => scrollToSection("home")} className="hover:text-yellow-300 transition-colors">Home</button>
+          <button
+            onClick={() => {
+              if (location.pathname === "/contact") {
+                setIsOpen(false);
+                navigate("/");
+              } else scrollToSection("home");
+            }}
+            className="hover:text-yellow-300 transition-colors"
+          >
+            Home
+          </button>
+
           <button onClick={() => scrollToSection("services")} className="hover:text-yellow-300 transition-colors">Services</button>
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
