@@ -7,7 +7,7 @@ import About from './components/About'
 import Trust from './components/Trust'
 import WhyUsSection from './components/Service'
 import Footer from './components/Footer'
-import ContactUs_Page from "./ContactUs_Page";
+import ContactUs_Page from "./components/ContactUs_Page";
 
 const App = () => {
   return (

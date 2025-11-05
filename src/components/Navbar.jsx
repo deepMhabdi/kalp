@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [navH, setNavH] = useState(0);
   const navRef = useRef(null);
+
+  const location = useLocation();
 
   const navigate = useNavigate();
 
@@ -53,8 +58,11 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#002366]/90 backdrop-blur-md shadow-md" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled || location.pathname === "/contact"
+          ? "bg-[#002366]/90 backdrop-blur-md shadow-md"
+          : "bg-transparent"
         }`}
+
     >
       <div className="flex justify-between items-center px-6 md:px-10 py-3 text-white font-medium">
         {/* Logo */}
@@ -64,9 +72,9 @@ const Navbar = () => {
             alt="Logo"
             className="h-8 md:h-10 w-auto object-contain"
           />
-          <h1 className="text-lg md:text-2xl font-bold whitespace-nowrap leading-none">
+          <button onClick={() => navigate("/")} className="text-lg md:text-2xl font-bold whitespace-nowrap leading-none">
             Kalp Diamonds
-          </h1>
+          </button>
         </div>
 
         {/* Desktop Menu */}
