@@ -13,12 +13,12 @@ const Landing = () => {
         <img
           src="../assets/bg_image.png"
           alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover object-center sm:object-[25%_center]"
+          className="absolute inset-0 w-full h-full object-left object-cover md:object-center sm:object-[25%_center]"
         />
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col gap-4 max-w-3xl mb-20 mr-auto ml-10 text-left">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-[#f5f1e9] mb-2">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-[#f5f1e9] mb-2">
             KALP DIAMONDS BV
           </h1>
           <p className="text-md sm:text-lg md:text-lg text-[#ffffff] mb-6 font-semibold">

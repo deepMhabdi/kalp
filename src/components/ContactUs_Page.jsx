@@ -44,7 +44,7 @@ const ContactUs_Page = () => {
       </div>
 
       {/* RIGHT SECTION FORM */}
-      <div className="w-full lg:w-[45%] flex flex-col pb-20">
+      <div className="w-full lg:w-[45%] flex flex-col pb-20 md:mt-24">
         <div className="bg-[#002366] text-white p-6 sm:p-10 rounded-2xl shadow-xl">
           <h2 className="text-2xl font-semibold mb-6">Contact</h2>
           
@@ -83,7 +83,7 @@ const ContactUs_Page = () => {
 
             <button
               type="submit"
-              className="w-full bg-[#EEFF00] text-black font-semibold py-3 mt-4 rounded-xl hover:bg-yellow-400 transition-all duration-200"
+              className="w-full bg-[#ffffff] text-[#002366] font-semibold py-3 mt-4 rounded-xl transition-all duration-200"
             >
               Send to us
             </button>
