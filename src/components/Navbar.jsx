@@ -93,7 +93,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => scrollToSection("footer")}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition"
           >
             Contact Us
@@ -127,10 +127,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => {
-              setIsOpen(false);
-              navigate("/contact");
-            }}
+            onClick={() => scrollToSection("footer")}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#305ddd] transition"
           >
             Contact Us

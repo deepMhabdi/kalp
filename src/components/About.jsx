@@ -59,12 +59,13 @@ const About = () => {
           {/* Hidden overlay (Address) */}
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-lg font-semibold">Belgium Office</p>
-            <p className="text-sm text-center mt-2 px-4">
+            {/* <p className="text-sm text-center mt-2 px-4">
               Room 117-118, Hoveniersstraat 30, Box 27, 2018 Antwerp, Belgium
-            </p>
+            </p> */}
             <br />
             <p className="text-sm text-center mt-2 px-4">
               +971 44301999
+              <br />
               Info.kalpjewels.ae@gmail.com
             </p>
           </div>
@@ -92,14 +93,15 @@ const About = () => {
           {/* Hidden overlay (Address) */}
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-lg font-semibold">India Office</p>
-            <p className="text-sm text-center mt-2 px-4">
+            {/* <p className="text-sm text-center mt-2 px-4">
               340, 341,
               Diamond Village, Jadakhadi,
               Mahidharpura, Surat.
-            </p>
+            </p> */}
             <br />
             <p className="text-sm text-center mt-2 px-4">
               +91 261 226099
+              <br />
               hitul@glacialdiamonds.com
             </p>
           </div>
@@ -128,15 +130,16 @@ const About = () => {
           {/* Hidden overlay (Address) */}
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-lg font-semibold">Dubai Office</p>
-            <p className="text-sm text-center mt-2 px-4">
+            {/* <p className="text-sm text-center mt-2 px-4">
               Kalp Jewels FZCO
               27 I, Gold Tower, Cluster I,
               Jumeirah Lake Towers (JLT),
               Dubai, United Arab Emirates
-            </p>
+            </p> */}
             <br />
             <p className="text-sm text-center mt-2 px-4">
               +971 44301999
+              <br />
               Info.kalpjewels.ae@gmail.com
             </p>
           </div>
@@ -165,20 +168,21 @@ const About = () => {
           {/* Hidden overlay (Address) */}
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-lg font-semibold">Hong Kong Office</p>
-            <p className="text-sm text-center mt-2 px-4">
+            {/* <p className="text-sm text-center mt-2 px-4">
               GD HK LTD
               Unit c, 18/F, No 8 Hart Avenue , Tsim Sha Tsui, Kowloon, Hong Kong
-            </p>
+            </p> */}
             <br />
             <p className="text-sm text-center mt-2 px-4">
               +85226239440
+              <br />
               gdhklimited@gmail.com
             </p>
           </div>
         </div>
 
-        <div className="relative h-64 rounded-xl w-full bg-[#002366] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
-          {/* Normal content */}
+        {/* <div className="relative h-64 rounded-xl w-full bg-[#002366] p-5 flex flex-col gap-4 justify-center items-center group overflow-hidden transition-all duration-300">
+          
           <div className="p-4 flex justify-center items-center h-28 w-28 transition-transform duration-300 group-hover:scale-105">
             <img
               src="../assets/Taiwan.png"
@@ -191,12 +195,12 @@ const About = () => {
             <p className="text-xl font-semibold tracking-tighter text-gray-200 text-center">
               Taiwan
             </p>
-            {/* <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
+            <p className="w-fit border-2 text-sm py-1 px-2 border-gray-400 text-gray-300 rounded-3xl">
               Serving Far East Market
-            </p> */}
+            </p>
           </div>
 
-          {/* Hidden overlay (Address) */}
+          
           <div className="absolute inset-0 bg-[#1e3a8a]/90 text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-lg font-semibold">Taiwan Office</p>
             <p className="text-sm text-center mt-2 px-4">
@@ -210,7 +214,7 @@ const About = () => {
               EMAIL-glacial28848082@gmail.com
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
