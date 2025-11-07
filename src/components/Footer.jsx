@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react"
 import { useNavigate } from "react-router-dom";
 
+
+
 const Footer = () => {
 
   const [scrolled, setScrolled] = useState(false);
@@ -67,8 +69,16 @@ const Footer = () => {
               <p className="text-sm opacity-80 leading-relaxed">
                 3rd Generation Diamantaires with 30+ years of legacy in ethical diamond sourcing and manufacturing.
               </p>
-              <div className="text-sm font-medium">RJC Member:  0000 5612</div>
+              <div className="text-sm font-medium">RJC Member: 0000 5612</div>
+
+              {/* ★ ADD THIS IMAGE HERE ★ */}
+              <img
+                src="../assets/rjc.png"
+                alt="RJC Certified Member"
+                className="w-48 sm:w-40 md:w-44 lg:w-48 object-contain mt-4 mx-auto md:mx-0"
+              />
             </div>
+
 
             {/* Services */}
             <div>
@@ -99,7 +109,7 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-gray-300 flex-shrink-0" />
                 <span className="opacity-80">swapnil@kalpdiamonds.com</span>
-              </div>  
+              </div>
             </div>
           </div>
 
