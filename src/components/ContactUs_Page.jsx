@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const ContactUs_Page = () => {
   return (
     <div className="min-h-screen w-full flex flex-col lg:flex-row font-semibold tracking-tight px-4 sm:px-10 lg:px-28 pt-[90px]">
@@ -10,25 +11,25 @@ const ContactUs_Page = () => {
           Let's get <br /> in touch
         </h1>
 
-        <p className="text-lg font-medium text-gray-700">
+        {/* <p className="text-lg font-medium text-gray-700">
           Don’t be afraid <br /> to say hello with us!
-        </p>
+        </p> */}
 
         <div className="space-y-6 text-gray-700 text-base">
           <div>
             <p className="font-semibold text-gray-500 uppercase tracking-wide">Phone</p>
-            <p className="text-black font-semibold text-lg mt-1">+ (2) 578-365-379</p>
+            <p className="text-black font-semibold text-lg mt-1">+971 44301999</p>
           </div>
 
           <div>
             <p className="font-semibold text-gray-500 uppercase tracking-wide">Email</p>
-            <p className="text-black font-semibold text-lg mt-1">hello@slabs.com</p>
+            <p className="text-black font-semibold text-lg mt-1">Info.kalpjewels.ae@gmail.com</p>
           </div>
 
           <div>
-            <p className="font-semibold text-gray-500 uppercase tracking-wide">Office</p>
+            <p className="font-semibold text-gray-500 uppercase tracking-wide">Belgium Office</p>
             <p className="text-black font-semibold text-lg mt-1 leading-tight">
-              230 Norman Street New York, QC (USA) H8R 1A1
+              Room 117-118, Hoveniersstraat 30, Box 27, 2018 Antwerp, Belgium
             </p>
             {/* <div className="flex items-center mt-2 gap-2">
               <a
@@ -44,7 +45,7 @@ const ContactUs_Page = () => {
       </div>
 
       {/* RIGHT SECTION FORM */}
-      <div className="w-full lg:w-[45%] flex flex-col pb-20 md:mt-24">
+      <div className="w-full lg:w-[45%] flex flex-col pb-20 md:mt-48">
         <div className="bg-[#002366] text-white p-6 sm:p-10 rounded-2xl shadow-xl">
           <h2 className="text-2xl font-semibold mb-6">Contact</h2>
           

@@ -73,7 +73,7 @@ const Navbar = () => {
             className="h-8 md:h-10 w-auto object-contain"
           />
           <button onClick={() => navigate("/")} className="text-lg md:text-2xl font-bold whitespace-nowrap leading-none">
-            Kalp Diamonds
+            Kalp Diamonds BV
           </button>
         </div>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => scrollToSection("footer")}
+            onClick={() => navigate("/contact")}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition"
           >
             Contact Us
@@ -127,7 +127,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => scrollToSection("footer")}
+            onClick={() => navigate("/contact")}
             className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#305ddd] transition"
           >
             Contact Us

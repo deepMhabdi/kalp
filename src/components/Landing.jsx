@@ -31,7 +31,7 @@ const Landing = () => {
             KALP DIAMONDS BV
           </h1>
           <p className="text-md sm:text-lg md:text-lg text-[#ffffff] mb-6 font-semibold">
-            Manufacturers, Wholesalers and Retailers of Rough and Polished Diamonds
+            Manufacturers, Wholesalers and Retailers of Polished Diamonds
           </p>
           {/* <button className="border border-[#f5f1e9] text-[#f5f1e9] px-6 py-3 uppercase tracking-widest hover:bg-[#1a568d] hover:text-white transition-all duration-300">
     Get in Touch

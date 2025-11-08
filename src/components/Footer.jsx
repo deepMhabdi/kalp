@@ -64,7 +64,7 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-white/20 rounded-sm flex items-center justify-center">
                   <span className="font-serif font-bold text-lg">K</span>
                 </div>
-                <span className="font-serif text-xl font-semibold">Kalp Diamonds</span>
+                <span className="font-serif text-xl font-semibold">Kalp Diamonds BV</span>
               </div>
               <p className="text-sm opacity-80 leading-relaxed">
                 3rd Generation Diamantaires with 30+ years of legacy in ethical diamond sourcing and manufacturing.
@@ -106,10 +106,20 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-gray-300 flex-shrink-0" />
                 <span className="opacity-80">+32 475 973 948</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 cursor-pointer">
                 <Mail className="h-4 w-4 text-gray-300 flex-shrink-0" />
-                <span className="opacity-80">swapnil@kalpdiamonds.com</span>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=swapnil@kalpdiamonds.com"
+                  className="opacity-80 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  swapnil@kalpdiamonds.com
+                </a>
               </div>
+
+
+
             </div>
           </div>
 
