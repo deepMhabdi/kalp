@@ -64,9 +64,12 @@ const About = () => {
             </p> */}
             <br />
             <p className="text-sm text-center mt-2 px-4">
-              +971 44301999
+              +32 3 400 4328
               <br />
-              Info.kalpjewels.ae@gmail.com
+              +32 475 973 948
+              <br />
+              <br />
+              swapnil@kalpdiamonds.com
             </p>
           </div>
         </div>
@@ -100,7 +103,10 @@ const About = () => {
             </p> */}
             <br />
             <p className="text-sm text-center mt-2 px-4">
-              +91 261 226099
+              Surat: +91 261 2609977
+              <br />
+              Mumbai: +91 22 23630999
+              <br />
               <br />
               hitul@glacialdiamonds.com
             </p>

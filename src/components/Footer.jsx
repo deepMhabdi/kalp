@@ -39,7 +39,12 @@ const Footer = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => navigate("/contact")}
+              onClick={() =>
+                window.open(
+                  "https://mail.google.com/mail/?view=cm&fs=1&to=swapnil@kalpdiamonds.com",
+                  "_blank"
+                )
+              }
               className="px-6 py-3 bg-white text-black rounded-full hover:bg-gray-200 transition flex items-center justify-center"
             >
               Contact Us <ArrowRight className="ml-2 h-5 w-5" />
