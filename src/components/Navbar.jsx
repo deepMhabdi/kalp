@@ -133,8 +133,12 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("trust")} className="hover:text-yellow-300 transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300 transition-colors">About Us</button>
           <button
-            onClick={() => navigate("/contact")}
-            className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#305ddd] transition"
+           onClick={() =>
+              window.open(
+                "https://mail.google.com/mail/?view=cm&fs=1&to=swapnil@kalpdiamonds.com",
+                "_blank"
+              )
+            }
           >
             Contact Us
           </button>
