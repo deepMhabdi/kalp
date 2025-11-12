@@ -103,9 +103,9 @@ const About = () => {
             </p> */}
             <br />
             <p className="text-sm text-center mt-2 px-4">
-              Surat: +91 261 2609977
-              <br />
               Mumbai: +91 22 23630999
+              <br />
+              Surat: +91 261 2609977
               <br />
               <br />
               hitul@glacialdiamonds.com
