@@ -139,6 +139,7 @@ const Navbar = () => {
                 "_blank"
               )
             }
+            className="border border-white px-4 py-1 rounded-full hover:bg-white hover:text-[#155793] transition"
           >
             Contact Us
           </button>
