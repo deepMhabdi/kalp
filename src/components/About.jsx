@@ -27,7 +27,7 @@ const About = () => {
         {/* Right Image Section */}
         <div className="md:w-[35%] flex justify-center md:justify-end">
           <img
-            src="../assets/smalldiamond.png"
+            src="https://img.freepik.com/premium-photo/diamond-classic-cut_103577-3381.jpg?semt=ais_incoming&w=740&q=80"
             alt="Diamonds"
             className="h-64 md:h-60 lg:h-64 rounded-2xl object-cover"
           />
