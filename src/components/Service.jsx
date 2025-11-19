@@ -79,7 +79,7 @@ const WhyUsSection = () => {
             </div>
             <div className="mt-6">
               <img
-                src="https://img.freepik.com/premium-photo/diamond-classic-cut_103577-3381.jpg?semt=ais_incoming&w=740&q=80"
+                src="../assets/diamond3.png"
                 alt="Happy family signing documents with real estate agent"
                 className="w-full h-64 sm:h-72 object-cover rounded-2xl shadow-lg"
               />

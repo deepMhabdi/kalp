@@ -27,8 +27,8 @@ const Landing = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col gap-4 max-w-3xl mb-20 mr-auto ml-10 text-left -mt-24 md:mt-0">
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-[#f5f1e9] mb-2">
-            KALP DIAMONDS BV
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-[#f5f1e9] mb-2 space-y-7">
+            KALP DIAMONDS 
           </h1>
           <p className="text-md sm:text-lg md:text-lg text-[#ffffff] mb-6 font-semibold">
             Manufacturers, Wholesalers and Retailers of Polished Diamonds
